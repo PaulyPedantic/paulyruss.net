@@ -1,5 +1,5 @@
 <?php
-	include("scripts/header.php");
+	include 'scripts/header.php';
 ?>
 
 		<div class="jumbotron intro section bg-img-section" id="home">
@@ -88,18 +88,18 @@
 							<div class="form-group">
 								<label for="userEmail" class="col-sm-2 control-label">Email</label>
 								<div class="col-sm-10">
-									<input type="email" class="form-control" id="userEmail" placeholder="Please provide an email address I can reply to." >
+									<input type="email" class="form-control" name="email" placeholder="Please provide an email address I can reply to." >
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="userMessage" class="col-sm-2 control-label">Message</label>
 								<div class="col-sm-10">
-									<textarea class="form-control" id="userMessage" placeholder="Type a message here if you have a question, comment, or want to work together." rows="5" ></textarea>
+									<textarea class="form-control" name="userMessage" placeholder="Type a message here if you have a question, comment, or want to work together." rows="5" ></textarea>
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-2 col-sm-10">
-									<button type="submit" class="btn btn-lg btn-success" >Submit</button>
+									<button type="submit" class="btn btn-lg btn-success" disabled="true">Submit</button>
 								</div>
 							</div>
 						</form>
@@ -114,13 +114,6 @@
 			</div>
 		</div>
 
-		<div class="container-fluid">
-			<footer>
-				<p>&copy 2016 Pauly Russ. <a rel="nofollow" href="http://paulyruss.net/#contact">Contact me</a>. <i class="fa fa-thumbs-o-up"></i></p>
-			</footer>
-		</div>
-		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-		<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-		<script src="js/index.js"></script>
-	</body>
-</html>
+<?php
+include 'scripts/footer.php';
+?>
