@@ -1,43 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Pauly Russ</title>
-    <meta name="description" content="Pauly Russ is a technical analyst and aspiring web developer in Milwaukee, Wi.">
-    
-  </head>
+<?php
+	include("scripts/header.php");
+?>
 
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
-		<div class="container-fluid">
-			<nav class="navbar navbar-inverse navbar-fixed-top navFix">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" alt="Show Navigation Options">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				<a class="navbar-brand" href="#home">PaulyRuss.net</a>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav navbar-right navFix">
-	
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	
 		<div class="jumbotron intro section bg-img-section" id="home">
 			<h1>My name is Pauly Russ. </h1>
 			<p class="lead">I'm a Technical Analyst, and I've built this page to tell you about myself. I enjoy tech, music, and the outdoors. I want to have a positive impact on the world. If you want more than the bullet points, </p>
 			<p class="lead"><a href="#contact" class="btn btn-lg btn-success">Let's talk</a></p>
 		</div>
-	
+
 		<div class="container section no-img-section" id="skills">
 			<h3 class="sectionHead">Skills</h3>
 			<div class="row">
@@ -79,7 +49,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<div id="about" class="section bg-img-section">
 			<div class="container">
 				<h3 class="sectionHead">My Story</h3>
@@ -92,7 +62,7 @@
 				</p>
 			</div>
 		</div>
-	
+
 		<div class="container section no-img-section" id="work">
 			<h3 class="sectionHead">Work Examples</h3>
 			<div class="row">
@@ -107,29 +77,29 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<div id="contact" class="bg-img-section section fullHeight">
 			<div class="container">
 				<h3 class="sectionHead">Contact</h3>
 				<p> I like having a contact form as part of the page, and as soon as I migrate the page from <a href="www.github.io" target="_blank" class="inlineLink"> Github Pages </a> to a dedicated host, I can write the server side code to make it actually send an email. For now, I'd love to talk to you through my accounts on Twitter, Github, LinkedIn, or Free Code Camp. You can find me using the buttons below.</p>
 				<div class="row">
 					<div class="col-md-6 col-md-offset-1">
-						<form class="form-horizontal">
+						<form class="form-horizontal" action="scripts/email-action.php" method="POST">
 							<div class="form-group">
 								<label for="userEmail" class="col-sm-2 control-label">Email</label>
 								<div class="col-sm-10">
-									<input type="email" class="form-control" id="userEmail" placeholder="Please provide an email address I can reply to." disabled="true">
+									<input type="email" class="form-control" id="userEmail" placeholder="Please provide an email address I can reply to." >
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="userMessage" class="col-sm-2 control-label">Message</label>
 								<div class="col-sm-10">
-									<textarea class="form-control" id="userMessage" placeholder="Type a message here if you have a question, comment, or want to work together." rows="5" disabled="true"></textarea>
+									<textarea class="form-control" id="userMessage" placeholder="Type a message here if you have a question, comment, or want to work together." rows="5" ></textarea>
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-2 col-sm-10">
-									<button type="submit" class="btn btn-lg btn-success" disabled="true">Submit</button>
+									<button type="submit" class="btn btn-lg btn-success" >Submit</button>
 								</div>
 							</div>
 						</form>
@@ -143,12 +113,14 @@
 				</div>
 			</div>
 		</div>
-	
-		<div class="container-fluid text-center" id="footer">
-			<p>I'm still learning. Please <a href="#contact">contact me</a> to report bugs so I can get better. <i class="fa fa-thumbs-o-up"></i></p>
+
+		<div class="container-fluid">
+			<footer>
+				<p>&copy 2016 Pauly Russ. <a rel="nofollow" href="http://paulyruss.net/#contact">Contact me</a>. <i class="fa fa-thumbs-o-up"></i></p>
+			</footer>
 		</div>
-		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>		
- -        	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>		
- -        	<script src="js/index.js"></script>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+		<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>
