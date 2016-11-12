@@ -1,0 +1,127 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+.fullH {
+	height:55vh;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+menu {
+	padding: 0;
+}
+.mylight {
+	font-size: 0.8em;
+	font-weight: 200;
+	color: black;
+	margin-top: 0;
+}
+
+.myicon{
+	margin-bottom: 15px;
+}
+.mymenu {
+	margin: 0;
+}
+.mymenu > a, .mymenu>p {
+	display:inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 1.1rem;
+	margin:0;
+}
+
+.mymenu a:hover {
+	transition: background-color 0.5s ease;
+	background-color: #f9a825;
+}
+
+* > p, * > div {         /*add a little breathing room above any p or div that is a child of another element*/
+	margin-top: 10px;
+}
+
+.btn, .btn-large {
+	background-color: #0097a7; /*cyan darken-2, override default button color*/
+}
+
+.btn:hover, .btn-large:hover {
+	background-color: #00BCD4; /*cyan darken-1, override default button hover which lightens default button*/
+}
+
+.btn:focus, .btn-large:focus {
+	background-color: #0097a7; /*cyan darken-3, override default button focus which darkens default button*/
+}
+
+.btn-floating {
+	margin: 3px;
+
+}
+.fixed-action-btn {
+	left: 3em;
+	right: auto;
+	bottom: auto;
+}
+.fixed-action-btn, .fixed-action-btn ul {
+	position: relative;
+}
+
+.fixed-action-btn.horizontal ul {
+	right:25rem;
+	top: -2.2rem;
+	width: 25rem;
+}
+
+* > p, * > div {         /*add a little breathing room above any p or div that is a child of another element*/
+	margin-top: 10px;
+}
+
+.btn, .btn-large {
+	background-color: #0097a7; /*cyan darken-2, override default button color*/
+}
+
+.btn:hover, .btn-large:hover {
+	background-color: #00BCD4; /*cyan darken-1, override default button hover which lightens default button*/
+}
+
+.btn:focus, .btn-large:focus {
+	background-color: #0097a7; /*cyan darken-3, override default button focus which darkens default button*/
+}
+
+.btn-floating {
+	margin: 3px;
+
+}
+.fixed-action-btn {
+	left: 3em;
+	right: auto;
+	bottom: auto;
+}
+.fixed-action-btn, .fixed-action-btn ul {
+	position: relative;
+}
+
+.fixed-action-btn.horizontal ul {
+	right:25rem;
+	top: -2.2rem;
+	width: 25rem;
+}
+
+@media screen and (max-width: 600px) {    /*Fixed action buttons weren't behaving correctly on mobile. Using this to adjust placement at small breakpoint*/
+	.fixed-action-btn.horizontal {
+		left: 18rem;
+		right: auto;
+		top: -6rem;
+	}
+	/*.fixed-action-btn.horizontal ul {
+		right:36rem;
+	}*/
+}
