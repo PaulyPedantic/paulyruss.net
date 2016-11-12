@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://paulyruss.net/css/style.css">
 		<?php
-		if (strpos($_SERVER['REQUEST_URI'], 'index')) !== false) {  //There's probably a better way, but for now, if the page returns index, set the link rel canonical to the domain/
+		if (strpos($_SERVER['REQUEST_URI'], 'index') !== false) {  //There's probably a better way, but for now, if the page returns index, set the link rel canonical to the domain/
     	echo '<link rel="canonical" href="http://paulyruss.net/">';
 		}
 		?>
