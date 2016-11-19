@@ -12,8 +12,8 @@
 		}
 		?>
 
-    <title>Pauly Russ, Technical Business Analyst</title>
-    <meta name="description" content="Pauly Russ is a technical business analyst and aspiring web developer in Milwaukee, Wi.">
+    <title>Pauly Russ, Technical Analyst</title>
+    <meta name="description" content="Pauly Russ is a technical analyst and student of web development and data analytics in Milwaukee, Wi.">
 
   </head>
 

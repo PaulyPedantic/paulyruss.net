@@ -40,13 +40,13 @@
 			$update->bind_param("ssss", $dispname, $comment, $id, $email);
 
 			if ($update->execute()) {
-				$success = "Your comment has been updated. Return to the <a href=\"http://paulruss.uwmsois.com/assignment8\">Guestbook home page</a> to view.";
+				$success = "Your comment has been updated. Return to the <a href=\"$baseurl\">Guestbook home page</a> to view.";
 			} else {
 				$error="Something went wrong while submitting. Please try again.";
 			}
 		}
 	}
-} else {                      //ACTION BUTTONS ACCESS SCRIPT THROUGH GET METHOD
+} else if (isset($_GET['id'])){                      //ACTION BUTTONS ACCESS SCRIPT THROUGH GET METHOD
 	$id = trim(filter_var($_GET['id'],FILTER_SANITIZE_NUMBER_INT));
 	if (empty($id)) {
 		$error = "Something went wrong, ID passed is not valid. Please fill in the information below to update a comment.";
@@ -55,18 +55,18 @@
 
 			$get->bind_param("s",$id);
 			if ($get->execute()) {
-				$prefill = mysqli_fetch_array($get->get_result(),MYSQLI_ASSOC);
+				$prefill = mysqli_fetch_array($db->get_result(),MYSQLI_ASSOC);
+				#$prefill = mysqli_fetch_array($get->fetch(),MYSQLI_ASSOC);
 			} else {
 				$error = "Something went wrong. Please fill in the information below to update a comment.";
 			}
 	}
 };
 
-mysqli_close($db);
 echo '<div class="container">';
 if ($success){
 	echo "<p class=\"green-text text-darken-3\"><i class=\"material-icons\">done</i>$success</p>";
-} else {
+} else if ($error){
 	echo "<p class=\"red-text text-darken-3\"><i class=\"material-icons\">error</i>$error</p>";
 }
 echo '</div>';

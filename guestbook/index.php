@@ -1,7 +1,6 @@
 <?php
 include("header.php");
 
-$baseurl = 'http://paulruss.uwmsois.com/assignment8/index.php';
 $sort = trim(filter_var($_GET['s'],FILTER_SANITIZE_STRING));
 $filter = trim(filter_var($_GET['h'],FILTER_SANITIZE_STRING));
 
@@ -145,8 +144,8 @@ $filter = trim(filter_var($_GET['h'],FILTER_SANITIZE_STRING));
 												echo '<i class="large material-icons">view_headline</i>';
 											echo '</a>';
 											echo '<ul>';
-												echo '<li><a href="http://paulruss.uwmsois.com/assignment8/update.php?id=' .$row["id"] .'" class="btn-floating cyan darken-1"><i class="material-icons" alt="Update Comment">mode_edit</i></a></li>';
-												echo '<li><a href="http://paulruss.uwmsois.com/assignment8/delete.php?id=' .$row["id"] .'" class="btn-floating red"><i class="material-icons" alt="Delete Comment">delete</i></a></li>';
+												echo '<li><a href="http://paulyruss.net/guestbook/update.php?id=' .$row["id"] .'" class="btn-floating cyan darken-1"><i class="material-icons" alt="Update Comment">mode_edit</i></a></li>';
+												echo '<li><a href="http://paulyruss.net/guestbook/delete.php?id=' .$row["id"] .'" class="btn-floating red"><i class="material-icons" alt="Delete Comment">delete</i></a></li>';
 											echo '</ul>';
 										echo '</div>';
 									echo '</div>';

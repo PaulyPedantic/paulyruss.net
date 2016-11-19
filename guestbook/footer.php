@@ -12,6 +12,6 @@
 <script src="js/materialize.min.js"></script>
 <script src="js/init.js"></script>
 <script src="js/myscript.js"></script>  <!-- really basic javascript to prompt for comfirmation before deleting a comment -->
-
+<?php mysqli_close($db);?>
 </body>
 </html>

@@ -26,7 +26,7 @@
 				$delete->bind_param("ss", $id, $email);
 
 				if ($delete->execute()) {
-					$success = "Your comment has been deleted. Return to the <a href=\"http://paulruss.uwmsois.com/assignment8\">Guestbook home page</a> to confirm.";
+					$success = "Your comment has been deleted. Return to the <a href=\"$baseurl\">Guestbook home page</a> to confirm.";
 				} else {
 					$error="Something went wrong while deleting. Please try again.";
 				}

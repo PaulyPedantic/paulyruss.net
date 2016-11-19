@@ -58,7 +58,7 @@
 					advanced quickly through the levels of my role, and with the guidance of several key mentors, I grew into an Information Technology role as a member of the Analyst team Recently, I returned to UWM enrolled part-time in the School of Information Science,
 					and I'm poised to graduate in December 2016 with a Bachelor of Science in Information Science and Technology.</p>
 				<p>I'm actively working to learn new things daily, emphasizing skills in business, technology, and leadership. My ultimate goal is to develop into a major influencer in a non-profit or business with a mission to address education, poverty alleviation,
-					youth outreach, or medical care accessibility. To further that goal, after I've completed my BS I plan to research and enroll in an MBA program that offers an emphasis in Management Information Systems or similar areas of study.
+					youth outreach, or medical care accessibility using information technology. To further that goal, I plan to learn independently to fill some of the gaps in my knowledge for a few years before enrolling in a masters program that offers an emphasis in Data Science, Information Systems, or similar areas of study.
 				</p>
 			</div>
 		</div>
@@ -67,10 +67,10 @@
 			<h3 class="sectionHead">Work Examples</h3>
 			<div class="row">
 				<div class="col-sm-4">
-					<img src="http://placehold.it/350/222222/ffffff?text=Placeholder+Project+1" class="img-responsive img-circle workItem" id="workItem1">
+					<a href="/randomQuoteGen/" target="_blank" alt="random quote generator"><img src="/img/quoteGen.png" class="img-responsive img-circle workItem" id="workItem1" alt="Screen capture of random quote generator"></a>
 				</div>
 				<div class="col-sm-4">
-					<img src="http://placehold.it/350/222222/ffffff?text=Placeholder+Project+2" class="img-responsive img-circle workItem" id="workItem2">
+					<a href="http://paulruss.uwmsois.com/assignment8" target="_blank"  alt="guest book"><img src="/img/guestbook.png" class="img-responsive img-circle workItem" id="workItem2">
 				</div>
 				<div class="col-sm-4">
 					<img src="http://placehold.it/350/222222/ffffff?text=Placeholder+Project+3" class="img-responsive img-circle workItem" id="workItem3">

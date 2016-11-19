@@ -1,5 +1,6 @@
 <?php
-include(mysqli_connect.php);
+include("mysqli_connect.php");
+$baseurl = 'http://paulyruss.net/guestbook/index.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +35,7 @@ include(mysqli_connect.php);
 <!--based on template from materializecss.com -->
 <body class="yellow lighten-5">
   <nav class="yellow darken-2" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="http://paulruss.uwmsois.com/" class="brand-logo">PaulyRuss</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="http://paulyruss.net/" class="brand-logo">PaulyRuss</a>
       <ul class="right hide-on-med-and-down">
 				<li><a href="index.php">Guestbook Home</a></li>
 				<li><a href="leave.php">New Comment</a></li>
