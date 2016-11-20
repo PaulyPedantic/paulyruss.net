@@ -105,7 +105,7 @@
 						</form>
 					</div>
 					<div class="col-md-3">
-						<a href="https://twitter.com/PaulyPedantic" class="btn btn-lg btn-default btn-block" id="twitter" data-show-count="false"><i class="fa fa-twitter-square" aria-hidden="true" target="_blank"></i> Twitter</a>
+						<a href="https://twitter.com/PaulyPedantic" target="_blank" class="btn btn-lg btn-default btn-block" id="twitter" data-show-count="false" ><i class="fa fa-twitter-square" aria-hidden="true" target="_blank"></i> Twitter</a>
 						<a href="https://github.com/PaulyPedantic" target="_blank" class="btn btn-lg btn-default btn-block" id="github"><i class="fa fa-github-square" aria-hidden="true"></i> Github</a>
 						<a href="https://www.linkedin.com/in/paulyruss" target="_blank" class="btn btn-lg btn-default btn-block" id="linkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
 						<a href="https://www.freecodecamp.com/paulypedantic" target="_blank" class="btn btn-lg btn-default btn-block" id="freeCodeCamp"><i class="fa fa-fire" aria-hidden="true"></i> FreeCodeCamp</a>
