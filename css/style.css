@@ -17,13 +17,14 @@ body {
 	font-size: 4em;
 }
 
-.inlineLink {
+.footLink {
 	color: lightgreen;
+	display: inline-block;
+	padding: 0rem 4rem;
 }
 
-.inlineLink:hover {
+.footLink:hover {
 	color: green;
-	text-decoration: underline;
 }
 
 .bg-img-section {
@@ -147,18 +148,25 @@ body {
 }
 
 footer {
-	background-color: #222;
-	height: 50px;
+	background-color: rgba(34, 34, 34, 0.8);
+	opacity:
 	font-size: 0.8em;
 	color: #ccc;
-	padding-top: 20px;
+	padding-top: 1.5rem;
+	position: fixed;
+	bottom: 0;
+	transition: bottom 0.3s ease-in-out;
+}
+
+.bottom-out {
+	bottom: -10rem;
 }
 
 /*media queries*/
 
 @media (max-height: 450px) {
 	.section {
-		padding-top: 35px;
+		padding-top: 1.5rem;
 	}
 }
 

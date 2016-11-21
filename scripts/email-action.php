@@ -3,10 +3,6 @@
 include 'header.php';
 if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['email'])) {
 
-	$email_to = "paulydanyl@gmail.com";
-	$email_subject = "New Message Submitted From PaulyRuss.net";
-
-
 	// validation expected data exists
 	if(!isset($_POST['email']) ||
 		!isset($_POST['userMessage'])) {
@@ -15,6 +11,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['email'])) {
 
 	$email_from = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL); // required
 	$comment = filter_var($_POST['userMessage'], FILTER_SANITIZE_STRING); // required
+	$subject = filter_var($_POST['emailSubj']).FILTER_SANITIZE_STRING);
+
+	$email_to = "paulydanyl@gmail.com";
+	$email_subject = "New Message at PaulyRuss.net RE: ".$subject;
 
 	$error_message = "";
 	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -36,10 +36,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['email'])) {
 	  return str_replace($bad,"",$string);
 	}
 
-	$email_message = "comment: ".clean_string($comment)."\n";
+	$email_message = 'From:'.$email_from."\r\n \r\n".'RE: '.clean_string($subject)."\r\n \r\n".clean_string($comment)."\n";
 // create email headers
 
-$headers = 'From: '.$email_from."\r\n".
+$headers = "From: contact@paulyruss.net\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 mail($email_to, $email_subject, $email_message, $headers);

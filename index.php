@@ -2,13 +2,13 @@
 	include 'scripts/header.php';
 ?>
 
-		<div class="jumbotron intro section bg-img-section" id="home">
+		<div id="home" class="jumbotron intro section bg-img-section">
 			<h1>My name is Pauly Russ. </h1>
 			<p class="lead">I'm a Technical Analyst, and I've built this page to tell you about myself. I enjoy tech, music, and the outdoors. I want to have a positive impact on the world. If you want more than the bullet points, </p>
 			<p class="lead"><a href="#contact" class="btn btn-lg btn-success">Let's talk</a></p>
 		</div>
 
-		<div class="container section no-img-section" id="skills">
+		<div id="skills" class="container section no-img-section">
 			<h3 class="sectionHead">Skills</h3>
 			<div class="row">
 				<div class="col-sm-4">
@@ -63,14 +63,14 @@
 			</div>
 		</div>
 
-		<div class="container section no-img-section" id="work">
+		<div id="work" class="container section no-img-section">
 			<h3 class="sectionHead">Work Examples</h3>
 			<div class="row">
 				<div class="col-sm-4">
 					<a href="/randomQuoteGen/" target="_blank" alt="random quote generator"><img src="/img/quoteGen.png" class="img-responsive img-circle workItem" id="workItem1" alt="Screen capture of random quote generator"></a>
 				</div>
 				<div class="col-sm-4">
-					<a href="http://paulruss.uwmsois.com/assignment8" target="_blank"  alt="guest book"><img src="/img/guestbook.png" class="img-responsive img-circle workItem" id="workItem2">
+					<a href="http://paulruss.uwmsois.com/assignment8" target="_blank"  alt="guest book"><img src="/img/guestbook.png" class="img-responsive img-circle workItem" id="workItem2"></a>
 				</div>
 				<div class="col-sm-4">
 					<img src="http://placehold.it/350/222222/ffffff?text=Placeholder+Project+3" class="img-responsive img-circle workItem" id="workItem3">
@@ -81,7 +81,7 @@
 		<div id="contact" class="bg-img-section section fullHeight">
 			<div class="container">
 				<h3 class="sectionHead">Contact</h3>
-				<p> I like having a contact form as part of the page, and as soon as I migrate the page from <a href="www.github.io" target="_blank" class="inlineLink"> Github Pages </a> to a dedicated host, I can write the server side code to make it actually send an email. For now, I'd love to talk to you through my accounts on Twitter, Github, LinkedIn, or Free Code Camp. You can find me using the buttons below.</p>
+				<p>Fill in the form to send me an email, or contact me through my accounts on Twitter, Github, LinkedIn, or Free Code Camp linked below.</p>
 				<div class="row">
 					<div class="col-md-6 col-md-offset-1">
 						<form class="form-horizontal" action="scripts/email-action.php" method="POST">
@@ -92,6 +92,12 @@
 								</div>
 							</div>
 							<div class="form-group">
+								<label for="emailSubj" class="col-sm-2 control-label">Subject</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" name="subject" placeholder="Provide a Subject for your message." >
+								</div>
+							</div>
+							<div class="form-group">
 								<label for="userMessage" class="col-sm-2 control-label">Message</label>
 								<div class="col-sm-10">
 									<textarea class="form-control" name="userMessage" placeholder="Type a message here if you have a question, comment, or want to work together." rows="5" ></textarea>
@@ -99,7 +105,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-2 col-sm-10">
-									<button type="submit" class="btn btn-lg btn-success" disabled="true">Submit</button>
+									<button type="submit" class="btn btn-lg btn-success">Submit</button>
 								</div>
 							</div>
 						</form>
